@@ -6,35 +6,25 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.util.Date;
 
+@Getter
+@Setter
 @Entity
 @Table(name = "ORDER")
 public class Order {
+
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Getter
-    @Setter
     private Long id;
 
-    @Column(name = "address_id")
-    @Getter
-    @Setter
-    private Long address_id;
-
     @ManyToOne(fetch = FetchType.EAGER, targetEntity = Address.class)
-    @JoinColumn(name = "address_id")
-    @Getter
-    @Setter
+    @JoinColumn(name = "address_id", insertable = false, updatable = false)
     private Address address;
 
     @Column(name = "create_datetime")
-    @Getter
-    @Setter
-    private Date create_datetime;
+    private Date createDatetime;
 
     @Column(name = "status")
-    @Getter
-    @Setter
     private String status;
 
     @Override
@@ -42,7 +32,6 @@ public class Order {
         final int prime = 31;
         int result = 1;
         result = prime * result + ((id == null) ? 0 : id.hashCode());
-        result = prime * result + ((address_id == null) ? 0 : address_id.hashCode());
         return result;
     }
 
@@ -58,10 +47,7 @@ public class Order {
         if (id == null) {
             if (other.id != null)
                 return false;
-        } else if (address_id == null) {
-            if (other.address_id != null)
-                return false;
-        }  else if (!id.equals(other.id) || !address_id.equals(other.address_id))
+        }  else if (!id.equals(other.id))
             return false;
         return true;
     }

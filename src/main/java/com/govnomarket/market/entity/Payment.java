@@ -16,11 +16,6 @@ public class Payment {
     @Setter
     private Long id;
 
-    @Column(name = "order_id")
-    @Getter
-    @Setter
-    private Long order_id;
-
     @OneToOne(fetch = FetchType.EAGER, targetEntity = Order.class)
     @JoinColumn(name = "order_id")
     @Getter
@@ -37,7 +32,6 @@ public class Payment {
         final int prime = 31;
         int result = 1;
         result = prime * result + ((id == null) ? 0 : id.hashCode());
-        result = prime * result + ((order_id == null) ? 0 : order_id.hashCode());
         return result;
     }
 
@@ -53,10 +47,7 @@ public class Payment {
         if (id == null) {
             if (other.id != null)
                 return false;
-        } else if (order_id == null) {
-            if (other.order_id != null)
-                return false;
-        } else if (!id.equals(other.id) || !order_id.equals(other.order_id))
+        } else if (!id.equals(other.id))
             return false;
         return true;
     }
