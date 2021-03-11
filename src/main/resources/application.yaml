@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: market
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/govnomarket_db
+    username: postgres
+    password: 0987
+    driver-class-name: org.postgresql.Driver
