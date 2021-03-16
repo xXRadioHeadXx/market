@@ -7,7 +7,6 @@ import java.util.Date;
 import java.util.List;
 
 public interface IPersonService {
-
     public PersonDTO save(PersonDTO person);
 
     public void deleteById(long personId);
