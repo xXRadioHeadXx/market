@@ -33,7 +33,7 @@ public class Person {
     private String email;
 
     @Column(name = "password_hash")
-    private String password_hash;
+    private String passwordHash;
 
     @Column(name = "login")
     private String login;

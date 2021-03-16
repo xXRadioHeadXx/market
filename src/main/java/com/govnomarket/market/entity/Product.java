@@ -27,6 +27,6 @@ public class Product {
     private String category;
 
     @Column(name = "price")
-    private Double price;
+    private Long price;
 
 }

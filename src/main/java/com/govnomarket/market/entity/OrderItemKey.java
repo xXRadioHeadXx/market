@@ -9,7 +9,7 @@ import java.io.Serializable;
 @Getter
 @Setter
 @EqualsAndHashCode
-class OrderItemKey implements Serializable {
+public class OrderItemKey implements Serializable {
 
 //    @Column(name = "order_id")
     Long orderId;
