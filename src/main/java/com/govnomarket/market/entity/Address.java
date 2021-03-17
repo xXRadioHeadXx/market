@@ -16,15 +16,10 @@ public class Address {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Getter
-    @Setter private Long id;
+    private Long id;
 
     @Column(name = "user_id")
-    @Getter
-    @Setter private Long user_id;
-
-//    @Column(name = "user_id")
-//    private Long userId;
+    private Long userId;
 
     @ManyToOne(fetch = FetchType.LAZY, targetEntity = Person.class)
     @JoinColumn(name = "user_id", insertable = false, updatable = false)

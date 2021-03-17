@@ -20,7 +20,7 @@ public class OrderItem {
             @AttributeOverride(name="productId",
                     column=@Column(name="product_id"))
     })
-    OrderItemKey id;
+    private OrderItemKey id;
 
 //    @Column(name = "order_id")
 //    @Getter

@@ -22,7 +22,7 @@ public class BasketItem {
             @AttributeOverride(name="productId",
                     column=@Column(name="product_id"))
     })
-    BasketItemKey id;
+    private BasketItemKey id;
 
 //    @Column(name = "person_id")
 //    @Getter
