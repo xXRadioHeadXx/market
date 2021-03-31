@@ -29,7 +29,6 @@ public class AddressDTO {
         AddressDTO addressDto = new AddressDTO();
 
         addressDto.setId(address.getId());
-        addressDto.setUserId(address.getUserId());
         addressDto.setPerson(PersonDTO.personToPersonDto(address.getPerson()));
         addressDto.setAddress(address.getAddress());
 
@@ -56,7 +55,6 @@ public class AddressDTO {
         Address address = new Address();
 
         address.setId(addressDto.getId());
-        address.setUserId(addressDto.getUserId());
         address.setPerson(PersonDTO.personDtoToPerson(addressDto.getPerson()));
         address.setAddress(addressDto.getAddress());
 

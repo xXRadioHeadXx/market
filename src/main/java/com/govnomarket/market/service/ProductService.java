@@ -1,7 +1,6 @@
 package com.govnomarket.market.service;
 
 import com.govnomarket.market.dto.ProductDTO;
-import com.govnomarket.market.dto.ProductDTO;
 import com.govnomarket.market.repository.IProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -11,6 +10,7 @@ public class ProductService implements IProductService{
 
     @Autowired
     private IProductRepository repository;
+
     @Override
     public ProductDTO save(ProductDTO productDto) {
         return ProductDTO.productToProductDto(repository.save(ProductDTO.productDtoToProduct(productDto)));
