@@ -18,7 +18,7 @@ public class AddressService implements IAddressService {
     }
 
     @Override
-    public void deleteById(long addressId) {
+    public void deleteById(Long addressId) {
         repository.deleteById(addressId);
     }
 
@@ -28,12 +28,12 @@ public class AddressService implements IAddressService {
     }
 
     @Override
-    public AddressDTO getOne(long addressId) {
+    public AddressDTO getOne(Long addressId) {
         return AddressDTO.addressToAddressDto(repository.getOne(addressId));
     }
 
     @Override
-    public List<AddressDTO> findAllByPersonId(long personId) {
+    public List<AddressDTO> findAllByPersonId(Long personId) {
         return AddressDTO.addressListToAddressDtoList(repository.findAllByPersonId(personId));
     }
 

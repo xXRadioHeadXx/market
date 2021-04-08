@@ -1,6 +1,5 @@
 package com.govnomarket.market.service;
 
-import com.govnomarket.market.dto.OrderDTO;
 import com.govnomarket.market.dto.PaymentDTO;
 import com.govnomarket.market.repository.IPaymentRepository;
 import org.springframework.beans.factory.annotation.Autowired;

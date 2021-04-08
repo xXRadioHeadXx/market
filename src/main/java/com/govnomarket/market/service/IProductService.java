@@ -8,10 +8,10 @@ public interface IProductService {
 
     public ProductDTO save(ProductDTO productDto);
 
-    public void deleteById(long productId);
+    public void deleteById(Long productId);
 
     public List<ProductDTO> findAll();
-    public ProductDTO getOne(long productId);
+    public ProductDTO getOne(Long productId);
 
     public List<ProductDTO> findAllByName(String name);
 

@@ -17,7 +17,7 @@ public class ProductService implements IProductService{
     }
 
     @Override
-    public void deleteById(long productId) {
+    public void deleteById(Long productId) {
         repository.deleteById(productId);
     }
 
@@ -27,7 +27,7 @@ public class ProductService implements IProductService{
     }
 
     @Override
-    public ProductDTO getOne(long productId) {
+    public ProductDTO getOne(Long productId) {
         return ProductDTO.productToProductDto(repository.getOne(productId));
     }
 

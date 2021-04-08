@@ -10,7 +10,7 @@ import java.util.List;
 
 public interface IAddressRepository extends JpaRepository<Address, Long> {
     @Query(value =  " SELECT id, cdate, mdate, user_id, address " +
-            " FROM public.\"ADDRESS\" where user_id = :category ",
+            " FROM public.\"ADDRESS\" where user_id = :personId ",
             nativeQuery = true)
     public List<Address> findAllByPersonId(@Param("personId") Long personId);
 

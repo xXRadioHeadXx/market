@@ -7,10 +7,10 @@ import java.util.List;
 public interface IAddressService {
     public AddressDTO save(AddressDTO addressDto);
 
-    public void deleteById(long addressId);
+    public void deleteById(Long addressId);
 
     public List<AddressDTO> findAll();
-    public AddressDTO getOne(long addressId);
-    public List<AddressDTO> findAllByPersonId(long personId);
+    public AddressDTO getOne(Long addressId);
+    public List<AddressDTO> findAllByPersonId(Long personId);
     public List<AddressDTO> findAllByAddress(String address);
 }

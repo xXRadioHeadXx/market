@@ -4,10 +4,12 @@ import com.govnomarket.market.dto.PersonDTO;
 import com.govnomarket.market.entity.Person;
 import com.govnomarket.market.repository.IPersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
 
+@Service
 public class PersonService implements IPersonService {
 
     @Autowired
@@ -19,7 +21,7 @@ public class PersonService implements IPersonService {
     }
 
     @Override
-    public void deleteById(long personId) {
+    public void deleteById(Long personId) {
         repository.deleteById(personId);
     }
 
@@ -29,7 +31,7 @@ public class PersonService implements IPersonService {
     }
 
     @Override
-    public PersonDTO getOne(long personId) {
+    public PersonDTO getOne(Long personId) {
         return PersonDTO.personToPersonDto(repository.getOne(personId));
     }
 

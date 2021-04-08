@@ -4,6 +4,7 @@ import com.govnomarket.market.dto.PersonDTO;
 import com.govnomarket.market.entity.Person;
 import com.govnomarket.market.passwordhashing.SHA512Hasher;
 import org.aspectj.lang.annotation.Before;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -12,6 +13,7 @@ import java.security.SecureRandom;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
+@Disabled
 class MarketApplicationTests {
 
 	private SHA512Hasher hasher;

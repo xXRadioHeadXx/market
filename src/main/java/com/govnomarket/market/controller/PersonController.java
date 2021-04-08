@@ -2,8 +2,10 @@ package com.govnomarket.market.controller;
 
 import com.govnomarket.market.dto.PersonDTO;
 import com.govnomarket.market.service.PersonService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.websocket.server.PathParam;
 import java.util.Date;
 import java.util.List;
 
@@ -11,6 +13,7 @@ import java.util.List;
 @RequestMapping("/person")
 public class PersonController {
 
+    @Autowired
     private PersonService service;
 
     @PostMapping("/add")
@@ -19,7 +22,7 @@ public class PersonController {
     }
 
     @DeleteMapping("/delete/{personId}")
-    public void delete(long personId) {
+    public void delete(Long personId) {
         service.deleteById(personId);
     }
 
@@ -29,7 +32,7 @@ public class PersonController {
     }
 
     @GetMapping("/one/{personId}")
-    public PersonDTO getOne(long personId) {
+    public PersonDTO getOne(Long personId) {
         return service.getOne(personId);
     }
 
@@ -44,7 +47,7 @@ public class PersonController {
     }
 
     @GetMapping("/byRole/{role}")
-    public List<PersonDTO> getByRole(String role) {
+    public List<PersonDTO> getByRole(@PathParam("role") String role) {
         return service.findAllByRole(role);
     }
 

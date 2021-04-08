@@ -18,7 +18,7 @@ public class ProductController {
     }
 
     @DeleteMapping("/delete/{productId}")
-    public void delete(long productId) {
+    public void delete(Long productId) {
         service.deleteById(productId);
     }
 
@@ -28,7 +28,7 @@ public class ProductController {
     }
 
     @GetMapping("/one/{productId}")
-    public ProductDTO getOne(long productId) {
+    public ProductDTO getOne(Long productId) {
         return service.getOne(productId);
     }
 

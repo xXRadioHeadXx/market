@@ -9,10 +9,10 @@ import java.util.List;
 public interface IPersonService {
     public PersonDTO save(PersonDTO person);
 
-    public void deleteById(long personId);
+    public void deleteById(Long personId);
 
     public List<PersonDTO> findAll();
-    public PersonDTO getOne(long personId);
+    public PersonDTO getOne(Long personId);
     public List<PersonDTO> findAllByName(String name);
     public List<PersonDTO> findAllByFullname(String fullname);
     public List<PersonDTO> findAllByRole(String role);
