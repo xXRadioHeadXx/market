@@ -3,11 +3,31 @@
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
-        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
-    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-    <include file="/db/changelog/changes/create-person-table-changelog-1.xml"/>
-    <include file="/db/changelog/changes/insert-person-table-changelog-2.xml"/>
-    <include file="/db/changelog/changes/update-person-table-precondition-3.xml"/>
+<!--    <include file="/db/changelog/changes/create-person-table-changelog-1.xml"/>-->
+<!--    <include file="/db/changelog/changes/insert-person-table-changelog-2.xml"/>-->
+<!--    <include file="/db/changelog/changes/update-person-table-precondition-3.xml"/>-->
+
+<!--    <include file="src/main/resources//db/changelog/changes/create-person_id_seq-sequence-changelog-1.xml"/>-->
+<!--    <include file="src/main/resources//db/changelog/changes/create-person-table-changelog-2.xml"/>-->
+<!--    <include file="src/main/resources//db/changelog/changes/create-address_id_seq-sequence-changelog-3.xml"/>-->
+<!--    <include file="src/main/resources//db/changelog/changes/create-address-table-changelog-4.xml"/>-->
+<!--    <include file="src/main/resources//db/changelog/changes/create-person_fkey-foreignkey-changelog-5.xml"/>-->
+<!--    <include file="src/main/resources//db/changelog/changes/create- order_id_seq-sequence-changelog-6.xml"/>-->
+<!--    <include file="src/main/resources//db/changelog/changes/create-order-table-changelog-7.xml"/>-->
+<!--    <include file="src/main/resources//db/changelog/changes/create-address_fkey-foreignkey-changelog-8.xml"/>-->
+<!--    <include file="src/main/resources//db/changelog/changes/create-payment_id_seq-sequence-changelog-9.xml"/>-->
+<!--    <include file="src/main/resources//db/changelog/changes/create-payment-table-changelog-10.xml"/>-->
+<!--    <include file="src/main/resources//db/changelog/changes/create-order_fkey-foreignkey-changelog-11.xml"/>-->
+<!--    <include file="src/main/resources//db/changelog/changes/create-product_id_seq-sequence-changelog-12.xml"/>-->
+<!--    <include file="src/main/resources//db/changelog/changes/create-product-table-changelog-13.xml"/>-->
+<!--    <include file="src/main/resources//db/changelog/changes/create-basketitem-table-changelog-14.xml"/>-->
+<!--    <include file="src/main/resources//db/changelog/changes/create-product_fkey-foreignkey-changelog-15.xml"/>-->
+<!--    <include file="src/main/resources//db/changelog/changes/create-orderitem-table-changelog-16.xml"/>-->
+
 </databaseChangeLog>
 
