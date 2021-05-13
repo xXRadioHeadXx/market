@@ -78,6 +78,22 @@
 					</excludes>
 				</configuration>
 			</plugin>
+<!--			<plugin>-->
+<!--				<groupId>org.liquibase</groupId>-->
+<!--				<artifactId>liquibase-maven-plugin</artifactId>-->
+<!--				<version>${liquibase.version}</version>-->
+<!--				<configuration>-->
+<!--					<propertyFile>src/main/resources/application.properties</propertyFile>-->
+<!--					<changeLogFile>src/main/resources/db/changelog/liquibase-changeLog.xml</changeLogFile>-->
+<!--&lt;!&ndash;					<propertyFile>src/main/resources/liquibase.properties</propertyFile>&ndash;&gt;-->
+<!--&lt;!&ndash;					<changeLogFile>src/main/resources/db/changelog/liquibase-changeLog.xml</changeLogFile>&ndash;&gt;-->
+<!--&lt;!&ndash;					<dataDir>${profile.dataDir}</dataDir>&ndash;&gt;-->
+<!--					&lt;!&ndash; log  &ndash;&gt;-->
+<!--					<verbose>false</verbose>-->
+<!--					<logging>info</logging>-->
+<!--					<promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>-->
+<!--				</configuration>-->
+<!--			</plugin>-->
 		</plugins>
 	</build>
 
